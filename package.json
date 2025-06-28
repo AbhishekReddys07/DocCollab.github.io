@@ -5,12 +5,13 @@
   "type": "module",
   "homepage": "https://github.com/AbhishekReddys07/DocCollab.github.io",
   "scripts": {
+     "build:gh-pages": "VITE_SUPABASE_URL= https://iahhpsfwjvazgcwxcalh.supabase.co/nVITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlhaGhwc2Z3anZhemdjd3hjYWxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTExMDg4ODQsImV4cCI6MjA2NjY4NDg4NH0.O07w4xK17j8Aj6C1rsEa-cQs_Io9UKPhMzMhvix7RXk/",
+    "deploy": "npm run build:gh-pages && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
